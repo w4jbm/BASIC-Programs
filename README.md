@@ -8,10 +8,55 @@ https://w4jbm.wordpress.com/2018/05/28/the-kolakoski-sequence-in-basic/
 
 These pages capture some of the tinkering I've done with BASIC.
 
-## BLACKBOX.BAS
+## BLACKBOX
 
 I first came across the "black box" in Ahl's More BASIC Computer Games. Out of the two books of games by Ahl, it was one of the three (along with Four in a Row and Hunt the Wampus) that I enjoyed the most.
 
 The program (with a few minor modifications as I struggled with debugging) is pretty much the same. I did start with the 'text recognition' version of thing from archive.org. The biggest problem I had was that many of the number 6s were 'recognized' as 4s. I caught many of them the first time through, but missed the mixup in line numbers 360 (which was shown as 340) and 460 (which was shown as 440). Because of the way I was importing to code, these simply replaced the right lines 340 and 440 and led to the omission of lines 360 and 460. It took me a while to catch on.
 
 That has helped me revise the way I troubleshoot BASIC programs I enter. Now I will usually also capture the results of the LIST command and at least make sure I have the number of lines I expected.
+
+
+## KOLALSEQ
+
+The Kolakoski Sequence was one of the things that caught my interest and led to me starting to tinker more in BASIC a while back.
+
+Details on the sequence can be found various places, but the simplified version paraphrased from Wikipedia is, "The Kolakoski sequence is an infinite sequence of symbols {1,2} that is its own run-length encoded value. It was initially named after the William Kolakoski (1944–97) who discussed it in 1965, but subsequent research has revealed that it first appeared in a paper by Rufus Oldenburger in 1939."
+
+Run-length encoding simply means that the value represent how long or how many instances of a particular value lasts or exist in a series.
+
+So let’s look at the start of the sequence:
+
+1,2,2,1,1,2,1,2,2,1,2,2,1,1,2,1,1,2,2,1,…
+
+Now for some simple run-length encoding, how many 1s in a row, how many 2s in a row, how many 1s (for a second time) in a row, and how many 2s (for a second time) in a row? That would be:
+
+1,2,2,1,…
+
+When we run-length encode the first six digits of the sequence, they yield the first four digits of the sequence.
+
+We can “unencode” our four digit series by saying the first number represents how many times 1 is repeated, the second number represents how many times 2 is repeated, the third digit goes back to the number of times 1 is repeated, and the fourth digit goes back to how many time 2 is repeated. So our 1,2,2,1,… becomes:
+
+1,2,2,1,1,2,…
+
+Using this general approach we can write a simple program that will "unencode" or "expand" the series starting with nothing more than the first two digits. This was originally written for the Brandy BASIC interpreter, but with the exception of the SWAP command should be fairly easy to port to any other vintage version of BASIC.
+
+My original write up on this is here:
+
+https://w4jbm.wordpress.com/2018/05/28/the-kolakoski-sequence-in-basic/
+
+
+## And the fine print...
+The copyright for some of these files may be held by others and subject to various terms and conditions. I have tried to recognize those involved and have left any notices or attribution in place with the files used.
+
+These are intended for personal use only. Any material will be removed at the request of the copyright holder or those holding other rights to it.
+
+To the extent applicable, any original work herein is:
+
+Copyright 2018 by James McClanahan and made available under the terms of The MIT License.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
