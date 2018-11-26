@@ -1,0 +1,1 @@
+10 A=A+.25:PRINT TAB(40+SIN(A)*35);"*":GOTO 10
