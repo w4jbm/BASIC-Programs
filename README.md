@@ -50,7 +50,7 @@ https://w4jbm.wordpress.com/2018/05/28/the-kolakoski-sequence-in-basic/
 
 This is a simple one-liner that I used to type into any computer I'd come across in stores that allowed me to type something in:
 
-10 A=A+.25:PRINT TAB(40+SIN(A)*35);"/*":GOTO 10
+10 A=A+.25:PRINT TAB(40+SIN(A)*35);"\*":GOTO 10
 
 It is also fairly easy to adjust for different screen widths (the 40 is roughly the center of the screen and the 35 is the width of the 'wave' divided by 2).
 
