@@ -46,6 +46,23 @@ My original write up on this is here:
 https://w4jbm.wordpress.com/2018/05/28/the-kolakoski-sequence-in-basic/
 
 
+## WAVEDEMO
+
+This is a simple one-liner that I used to type into any computer I'd come across in stores that allowed me to type something in:
+
+10 A=A+.25:PRINT TAB(40+SIN(A)*35);"*":GOTO 10
+
+It is also fairly easy to adjust for different screen widths (the 40 is roughly the center of the screen and the 35 is the width of the 'wave' divided by 2).
+
+It is more fun on slower terminals (300 baud or even teleprinters) because the time required to print characters causes it to speed up (on shorter line) and slow down (on longer lines). (At 300 baud, it can take two seconds or so to print a "wide" line while several "short" lines print in the same amount of time. With a teletype, it was espcially noticable. But that was the 1970s and early 1980s.)
+
+On modern machines, it may need a timing loop to keep it from scrolling to quickly.
+
+You can also replace the asterisk with text (like "HI!" or maybe a shortened store name depending where I was) if you want to.
+
+It will eventually hit a point where it stops adding because the value for A gets too large, but I've never been patient enough to let it get there. Having it reset to zero at some point could be done in a simple two line program.
+
+
 ## And the fine print...
 The copyright for some of these files may be held by others and subject to various terms and conditions. I have tried to recognize those involved and have left any notices or attribution in place with the files used.
 
