@@ -17,6 +17,30 @@ The program (with a few minor modifications as I struggled with debugging) is pr
 That has helped me revise the way I troubleshoot BASIC programs I enter. Now I will usually also capture the results of the LIST command and at least make sure I have the number of lines I expected.
 
 
+## HYPODATE
+
+Lee Bradley in the Not Just Tiny-C programming group on Facebook showed a program originally written by T A Gibson that calculated "hypotenuse" dates. These are dates where they month and date could form a right triange with a hypotenuse equal to the year. For example, the classic 3/4/5 right triange could match to a date of March 4, 2005. (I do know that US dates tend to take the format mm/dd/yyyy while Eurpoean dates tend to take the format dd/mm/yyyy. I have stuck with US formating, although both 3/4/5 and 4/3/5 (and some other pairs) are hypotenuse dates in either format.)
+
+I ran this in Chipmunk BASIC originally and it ran in a simplified version. When I ran it under Microsoft MBASIC-80 on an Altair 8800 clone, I encountered errors with some stray "noise" in the numbers. I introduced the variable Q and look at that to be "close to zero" to make things work consistently on the Altair.
+
+We can also simplify the range of years with a bit of thinking. January 1st would need a hypotenuse of the square root of 2 (1.4142), so we can start with YEAR=2. Also, December 31st would yield a hypotenuse of 33.2415 so we can end with YEAR=33.
+
+If you are interested in the results but don't want to have to run the program, here are the hypotonuse dates for the early 21st century:
+
+-3/4/05
+-4/3/05
+-6/8/10
+-8/6/10
+-5/12/13
+-12/5/13
+-9/12/15
+-12/9/15
+-8/15/17
+-12/16/20
+-7/24/25
+-10/24/26
+
+
 ## KOLALSEQ
 
 The Kolakoski Sequence was one of the things that caught my interest and led to me starting to tinker more in BASIC a while back.
