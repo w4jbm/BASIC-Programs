@@ -27,18 +27,18 @@ We can also simplify the range of years with a bit of thinking. January 1st woul
 
 If you are interested in the results but don't want to have to run the program, here are the hypotonuse dates for the early 21st century:
 
--3/4/05
--4/3/05
--6/8/10
--8/6/10
--5/12/13
--12/5/13
--9/12/15
--12/9/15
--8/15/17
--12/16/20
--7/24/25
--10/24/26
+- 3/4/05
+- 4/3/05
+- 6/8/10
+- 8/6/10
+- 5/12/13
+- 12/5/13
+- 9/12/15
+- 12/9/15
+- 8/15/17
+- 12/16/20
+- 7/24/25
+- 10/24/26
 
 
 ## KOLALSEQ
