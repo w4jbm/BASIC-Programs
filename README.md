@@ -70,6 +70,11 @@ My original write up on this is here:
 https://w4jbm.wordpress.com/2018/05/28/the-kolakoski-sequence-in-basic/
 
 
+## PRIMES
+
+This is a common (but not necessarily rigerous) benchmark program that was used by InterFace Age Magazine.
+
+
 ## WAVEDEMO
 
 This is a simple one-liner that I used to type into any computer I'd come across in stores that allowed me to type something in:
