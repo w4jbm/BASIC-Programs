@@ -75,6 +75,11 @@ https://w4jbm.wordpress.com/2018/05/28/the-kolakoski-sequence-in-basic/
 This is a common (but not necessarily rigerous) benchmark program that was used by InterFace Age Magazine.
 
 
+## TESTPAT.BAS
+
+Simple program to print a test pattern to the terminal. Does not make use of strings because of limitations on string length under CP/M in MBASIC.
+
+
 ## WAVEDEMO
 
 This is a simple one-liner that I used to type into any computer I'd come across in stores that allowed me to type something in:
