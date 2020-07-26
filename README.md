@@ -75,9 +75,9 @@ https://w4jbm.wordpress.com/2018/05/28/the-kolakoski-sequence-in-basic/
 This is a common (but not necessarily rigerous) benchmark program that was used by InterFace Age Magazine.
 
 
-## TESTPAT.BAS
+## SCRLTST.BAS and TESTPAT.BAS
 
-Simple program to print a test pattern to the terminal. Does not make use of strings because of limitations on string length under CP/M in MBASIC.
+Simple program to print a test pattern to the terminal. Does not make use of strings because of limitations on string length under CP/M in MBASIC. SCRLTST is better suited to being compiled using BASCOM.
 
 
 ## WAVEDEMO
