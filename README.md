@@ -17,6 +17,13 @@ The program (with a few minor modifications as I struggled with debugging) is pr
 That has helped me revise the way I troubleshoot BASIC programs I enter. Now I will usually also capture the results of the LIST command and at least make sure I have the number of lines I expected.
 
 
+## ECHO.BAS
+
+This program is designed to be compiled using MS's BASCOM under CP/M. Once compiled, it become a "typical" command file and can be launched from the CP/M command prompt followed by an "argument". This argument is echoed back to the console. At this time, no special character handling exists for control characters, etc..
+
+This was meant to be more of a proof-of-concept for passing arguments than anything particularly useful.
+
+
 ## HYPODATE
 
 Lee Bradley in the Not Just Tiny-C programming group on Facebook showed a program originally written by T A Gibson that calculated "hypotenuse" dates. These are dates where they month and date could form a right triange with a hypotenuse equal to the year. For example, the classic 3/4/5 right triange could match to a date of March 4, 2005. (I do know that US dates tend to take the format mm/dd/yyyy while Eurpoean dates tend to take the format dd/mm/yyyy. I have stuck with US formating, although both 3/4/5 and 4/3/5 (and some other pairs) are hypotenuse dates in either format.)
