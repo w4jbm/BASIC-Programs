@@ -2,7 +2,7 @@
 
 My first computer was an Ohio Scientific (OSI) C1P and the first langauge I worked with was BASIC. (The second was hand assembling 6502 code.)
 
-Although much maligned these days, I still believe BASIC was an important part of the emergence of the personal computer. The fact is that for most of the generation that was born in the 1960s and 1970s, it is likely that BASIC was their first (or at least one of the first) programming languages that they were exposed to. Some of my other thoughts on using BASIC for learning and problem solving can be found on my blog at:
+Although much maligned these days, I still believe BASIC was an important part of the emergence of the personal computer. The fact is that for most of the generation that was born in the 1960s and 1970s, it is likely that BASIC was the first (or at least one of the first) programming languages that they were exposed to. Some of my other thoughts on using BASIC for learning and problem solving can be found on my blog at:
 
 https://w4jbm.wordpress.com/2018/05/28/the-kolakoski-sequence-in-basic/
 
