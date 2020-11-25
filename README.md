@@ -87,6 +87,11 @@ This is a common (but not necessarily rigerous) benchmark program that was used 
 Simple program to print a test pattern to the terminal. Does not make use of strings because of limitations on string length under CP/M in MBASIC. SCRLTST is better suited to being compiled using BASCOM.
 
 
+## SWAP.BAS
+
+This is a simple program that shows how the values of two variable can be swapped without the need for a third variable. I've seen the approach used since my first exposure to computer programming (back in 1980), so it has been around a while. If you are using floating point math on some older BASICs it can behave a bit strange, but for small integers it generally is reliable.
+
+
 ## WAVEDEMO
 
 This is a simple one-liner that I used to type into any computer I'd come across in stores that allowed me to type something in:
